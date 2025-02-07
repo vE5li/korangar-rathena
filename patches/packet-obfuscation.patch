@@ -1,0 +1,13 @@
+diff --git a/src/config/packets.hpp b/src/config/packets.hpp
+index b216feb6e..93a774c2b 100644
+--- a/src/config/packets.hpp
++++ b/src/config/packets.hpp
+@@ -44,7 +44,7 @@
+ #if PACKETVER >= 20110817
+ 	/// Comment to disable the official packet obfuscation support.
+ 	/// This requires PACKETVER 2011-08-17 or newer.
+-	#ifndef PACKET_OBFUSCATION
++	#if 0
+ 		#define PACKET_OBFUSCATION
+ 
+ 		// Define these inside src/custom/defines_pre.hpp or src/custom/defines_post.hpp

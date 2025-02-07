@@ -1,0 +1,16 @@
+diff --git a/src/map/atcommand.cpp b/src/map/atcommand.cpp
+index f977b3565..11ec828f9 100644
+--- a/src/map/atcommand.cpp
++++ b/src/map/atcommand.cpp
+@@ -11970,9 +11970,9 @@ bool is_atcommand(const int32 fd, map_session_data* sd, const char* message, int
+ 
+ 	// type == 1 : player invoked
+ 	if (type == 1) {
+-		if ((is_atcommand && info->at_groups[sd->group->index] == 0) ||
++		/*if ((is_atcommand && info->at_groups[sd->group->index] == 0) ||
+ 			(!is_atcommand && info->char_groups[sd->group->index] == 0) )
+-			return false;
++			return false;*/
+ 
+ 		if( pc_isdead(sd) && pc_has_permission(sd,PC_PERM_DISABLE_CMD_DEAD) ) {
+ 			clif_displaymessage(fd, msg_txt(sd,1393)); // You can't use commands while dead

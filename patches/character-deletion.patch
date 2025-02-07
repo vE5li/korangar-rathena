@@ -1,0 +1,30 @@
+diff --git a/src/char/char.cpp b/src/char/char.cpp
+index fd76a93f9..cd537194e 100644
+--- a/src/char/char.cpp
++++ b/src/char/char.cpp
+@@ -1599,10 +1599,10 @@ enum e_char_del_response char_delete(struct char_session_data* sd, uint32 char_i
+ 		return CHAR_DELETE_PARTY;
+ 	}
+ 
+-	if( charserv_config.char_config.char_del_delay > 0 && ( !delete_date || delete_date > time(nullptr) ) ){ // not queued or delay not yet passed
++	/*if( charserv_config.char_config.char_del_delay > 0 && ( !delete_date || delete_date > time(nullptr) ) ){ // not queued or delay not yet passed
+ 		ShowInfo("Char deletion aborted: %s, Time was not set or has not been reached ye\n", name );
+ 		return CHAR_DELETE_TIME;
+-	}
++	}*/
+ 
+ 	/* Divorce [Wizputer] */
+ 	if( partner_id )
+diff --git a/src/char/char_clif.cpp b/src/char/char_clif.cpp
+index 244d8ad0d..3bff5a40a 100644
+--- a/src/char/char_clif.cpp
++++ b/src/char/char_clif.cpp
+@@ -593,6 +593,8 @@ int32 chclif_parse_char_delete2_req(int32 fd, struct char_session_data* sd) {
+  * @return true:Success, false:Failure
+  **/
+ bool chclif_delchar_check(struct char_session_data *sd, char *delcode, uint8 flag) {
++	return true;
++
+ 	// E-Mail check
+ 	if (flag&CHAR_DEL_EMAIL && (
+ 			!stricmp(delcode, sd->email) || //email does not match or
