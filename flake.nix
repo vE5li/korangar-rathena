@@ -23,15 +23,12 @@
           default = pkgs.rathena;
         };
 
-        nixosModules = rec {
-          all = import ./module.nix {
+        nixosModules = {
+          default = import ./module.nix {
             inherit pkgs;
             inherit (nixpkgs) lib;
           };
-
-          default = all;
         };
       }
     );
 }
-
