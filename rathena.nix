@@ -7,7 +7,7 @@
 
 stdenv.mkDerivation rec {
   pname = "rathena";
-  version = "2354fef32f4d04a089015dcb20f01e326b3c981b";
+  version = "66d0d515c1f0e8c51d4ec6acced645fbbaf31c0f";
 
   nativeBuildInputs = with pkgs; [
     zlib
@@ -58,6 +58,6 @@ stdenv.mkDerivation rec {
     owner = "rathena";
     repo = "rathena";
     rev = version;
-    hash = "sha256-fr5MPCYgKR9Qenx6E5tYT2OxU84nESWO/10cUd8/aRA=";
+    hash = "sha256-0htR9LXCBx/y3AOk1bHrOc2oSfMVVODoI/DBALiHMF4=";
   };
 }

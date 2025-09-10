@@ -1,9 +1,9 @@
 diff --git a/conf/battle/player.conf b/conf/battle/player.conf
-index 5dcf10930..207d014a7 100644
+index 620f6427d..abb6879c9 100644
 --- a/conf/battle/player.conf
 +++ b/conf/battle/player.conf
-@@ -66,16 +66,16 @@ natural_heal_weight_rate: 50
- natural_heal_weight_rate_renewal: 70
+@@ -75,16 +75,16 @@ natural_heal_skill_interval: 10000
+ major_overweight_rate: 90
  
  // Maximum atk speed. (Default 190, Highest allowed 199)
 -max_aspd: 190
