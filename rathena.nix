@@ -40,6 +40,8 @@ stdenv.mkDerivation rec {
     ./patches/packet-obfuscation.patch
     # Always allow unlimited slot moves
     ./patches/unlimited-slot-moves.patch
+    # Increase the vision range of the player.
+    ./patches/area_size.patch
   ];
 
   preInstall = ''

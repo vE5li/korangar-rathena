@@ -1,0 +1,17 @@
+diff --git a/conf/battle/client.conf b/conf/battle/client.conf
+index bccabf0ae..1c27e0ef1 100644
+--- a/conf/battle/client.conf
++++ b/conf/battle/client.conf
+@@ -38,10 +38,10 @@ hide_woe_damage: no
+ pet_hair_style: 100
+ 
+ // Visible area size (how many squares away from a player they can see)
+-area_size: 14
++area_size: 28
+ 
+ // Maximum walk path (how many cells a player can walk going to cursor)
+-max_walk_path: 17
++max_walk_path: 34
+ 
+ // Maximum allowed 'level' value that can be sent in unit packets.
+ // Use together with the aura_lv setting to tell when exactly to show the aura.
