@@ -41,7 +41,9 @@ stdenv.mkDerivation rec {
     # Always allow unlimited slot moves
     ./patches/unlimited-slot-moves.patch
     # Increase the vision range of the player.
-    ./patches/area_size.patch
+    ./patches/area-size.patch
+    # Increase the experince gain.
+    ./patches/experience.patch
   ];
 
   preInstall = ''
