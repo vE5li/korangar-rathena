@@ -1,9 +1,7 @@
 {
   pkgs,
   lib,
-}:
-
-{
+}: {
   # options.services.rathena = {
   #   enable = lib.mkEnableOption "rathena service";
   # };
@@ -82,11 +80,11 @@
         After = "rathena-char-server.service";
       };
 
-      wantedBy = [ "multi-user.target" ];
+      wantedBy = ["multi-user.target"];
     };
 
     networking.firewall = {
-      allowedTCPPorts = [ 6900 5121 6121 ];
+      allowedTCPPorts = [6900 5121 6121];
     };
   };
 }

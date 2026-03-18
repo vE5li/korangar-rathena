@@ -24,10 +24,18 @@ overlays = [ rathena.overlays.default ];
 The flake exposes two the following packages
 - `rathena`: compiled rAthena (with the patches applied) including config files and the SQL files for setting up the database
 - `rathena-scripts`: `rathena-start-database` and `rathena-setup-database` scripts for automating the setup process
+- `rathena-test-{PACKETVER}`: script to set up a local test insance of rAthena (including the database) with a specific packet version
 
-### Using the packets directly
+### Using the packages directly
 
-#### TODO
+#### Test packages
+
+The test packages are scripts to set up a temporary rAthena instance from a single command.
+To create a local test rAthena server with `PACKETVER = 20220406`, you can run
+
+```nix
+nix run .#rathena-test-20220406
+```
 
 ### Using the NixOS module
 

@@ -4,7 +4,6 @@
   fetchFromGitHub,
   PACKETVER ? "20220406",
 }:
-
 stdenv.mkDerivation rec {
   pname = "rathena";
   version = "b70dd346ffc6cc16c1aeaad522913cdbdd1da42b";
